@@ -6,7 +6,6 @@ import Resumecontent from "./ResumeContent";
 import "../../style.css";
 import "bootstrap/dist/css/bootstrap.min.css";
 import pdf from "../../Assets/CV_ENGLISH.pdf";
-import pdf_fr from "../../Assets/CV_FRENCH.pdf";
 
 function Resume() {
   return (
@@ -17,98 +16,113 @@ function Resume() {
           <Button variant="primary" href={pdf} target="_blank">
             <i className="fas fa-download">&nbsp;</i>Download Resume
           </Button>
-          &nbsp; &nbsp;
-          <Button variant="primary" href={pdf_fr} target="_blank">
-            <i className="fas fa-download">&nbsp;</i>Télécharger CV
-          </Button>
         </Row>
         <Row className="resume">
           <Col md={6} className="resume-left">
             <h3 className="resume-title">Experience</h3>
             <Resumecontent
-              title="React Native Developer - RifTech"
-              date="July 2021 - October 2021"
+              title="Freelance developer"
+              date="2020 (December - Present)"
               content={[
-                "Contributing to the developement of a centralized medical system.",
-                "UX/UI design of the interfaces.",
-                "Developping the mobile application for patients with React Native.",
+                "Realize interfaces for mobile and desktop taking into account ergonomic constraints at user level",
+                "set up the design and development of web, desktop and mobile applications.",
+                "Developping the mobile application for patients with Ionic Angular.",
                 "Interconnecting the backend and the mobile app with APIs.",
               ]}
             />
             <Resumecontent
-              title="UX/UI & Front-End Developer - Orange Maroc"
-              date="July 2021 - August 2021"
+              title="Full-Stack Developer Foliatech Tangier"
+              date="2020 (March - November)"
               content={[
-                "Brainstorming and choosing a problematic in the HeathTech field",
-                "Designing the brand identity and UX/UI of the project.",
-                "Developping the front-end ot the web application.",
-                "Linking the Front part with back-end and hardware (RaspberryPI) using APIs.",
+                "Develop solutions (web - mobile) aimed at optimizing the efficiency of internal services the relationship with business customers and their partners: ",
+                "Developping the front-end and Backend ot the web application Billing Management.",
+                "Using: Angular, Chart.js, Advanced Pie Chart, angular-calendar, bootstrap, ionic, Sql, iTextSharp, c#, EntityFrameworkCore, Linq, AutoMapper, SmartGit, MariaDB.",
               ]}
             />
             <Resumecontent
-              title="Flutter Developer - Daba'Go"
-              date="July 2020 - August 2020"
+              title="Freelance with logicworks.ma"
+              date="2019 (August - March)"
               content={[
-                "Developping and implementing a library of front-end reusable services using Dart and Flutter.",
-                "Documenting every piece of code I wrote.",
-                "Contributing to designing front-end elements and illustrations.",
-                "Beta tester of the mobile application.",
+                "Worked on projects building CRMs from the ground up to meet customer needs.",
+                "Worked on projects on-demand delivery platforms and jobs platform.",
+                "Customize existing modules and create new ones for customized customer needs.",
+                "Using: PHP, Codeigniter, Shopify, htmltopdf, GroceryCRUD, Mysql.",
+              ]}
+            />
+            <Resumecontent
+              title="End of studies project within TEOS Tangier"
+              date="2019 (February -August)"
+              content={[
+                "Implementation of an electronic document management solution.",
+                "Using: Alfresco, Angular, Mysql, PostgreSQL.",
+              ]}
+            />
+            <Resumecontent
+              title="Full-Stack Developer within NUTEK"
+              date="2018 (July-October)"
+              content={[
+                "Design and Development of a web application",
+                "Build Recruitment Test (MCQ) and HR Management.",
+                "Using: Angular, NodeJs. MongoDB, HTML5, CSS3, Bootstrap3, JavaScript, jQuery.",
               ]}
             />
             <h3 className="resume-title">Education</h3>
             <Resumecontent
-              title="National School of Computer Science and System Analysis, ENSIAS"
-              date="2019 - 2022"
-              content={["Web & Mobile Computing Engineering "]}
+              title="National School Of Applied Science In Tangier, ENSAT"
+              date="2016 - 2019"
+              content={["Engineering cycle, Computer engineering. "]}
             />
             <Resumecontent
-              title="CPGE - Lycee Mohammed 6"
-              date="2017 - 2019"
+              title="National School Of Applied Science In Tangier, ENSAT"
+              date="2013 - 2016"
               content={["Preparatory Classes, Mathematics and Physics Branch"]}
             />
             <Resumecontent
-              title="El Mansour Eddahbi High School"
-              date="2016 - 2017"
-              content={["Scientific Baccalaureat, Mathematics Option"]}
+              title="Tangier Reference : Mohamed el fateh school"
+              date="2012 - 2013"
+              content={["Scientific Baccalaureat, Physical Sciences Option, Mention : Good"]}
             />
           </Col>
           <Col md={6} className="resume-right">
-            <h3 className="resume-title">Extracurricular Activities</h3>
+            <h3 className="resume-title">Personal Projects</h3>
             <Resumecontent
-              title="Content Creator [Instagram: @choubari_]"
+              title="Manage Courses"
               content={[
-                "Sharing Coding Knowledge using beautiful designed posts.",
-                "Organizing many webinars for free about coding and design.",
-                "Doing One-to-One Consulting sessions in my free time.",
+                "Computer application that allows you to manage the courses, the subjects taught, the pupils as well as the marks and absences of the pupils.",
+                "Using: C#, ASP.NET MVC, MySQL, SQL SERVER.",
               ]}
             />
             <Resumecontent
-              title="Chair [IEEE ENSIAS Student Branch]"
+              title="Managing Categories And Products"
               content={[
-                "Organizing many volunteering activities and webinars with international speaksers.",
+                "Development of an application based on a micro service architecture.",
+                "Using : ReactJs, Laravel, PostgreSQL.",
               ]}
             />
             <Resumecontent
-              title="Co-Founder and Program Manager [Morocco IoT & AI Challenge]"
+              title="Android application for SQLITE database management"
               content={[
-                "Bringing Arab IoT & AI Challenge Local Qualifications to Morocco",
-                "Organizing many webinars, training and mentoring sessions for the participants",
-                "Omnisat from Morocco Won the first place on Arab IoT & AI Challenge (2020, the same year when we organized the first edition in Morocco)",
+                "Android application which allows you to create SQLITE databases.",
+                "Create tables, Add data, Delete data, Display data in grid form, User management",
+                "JAVA, SQLITE, ANDROID STUDIO",
               ]}
             />
             <Resumecontent
-              title="Graphic Designer [Olympiades ENSIAS]"
+              title="Department and Employee Management"
               content={[
-                "Designing Flyers, Social Media Posts, Event covers and Thumbnails.",
+                "Web Application.",
+                "JEE (JPA, JSP, Servlet, Spring, Hibernate), MySQL.",
               ]}
             />
-            <h3 className="resume-title">Ranks and Achivements</h3>
+            <h3 className="resume-title">Activities & Interests</h3>
             <Resumecontent
               title=""
               content={[
-                "IEEEXtreme 14.0 : 558",
-                "Moroccan Collegiates Programming Contest, MCPC: 21",
-                "GirlsCode",
+                "Extracurricular: May 2016 | Member Of The IT-DAY Organizing Committee",
+                "Graphic Designer,  Build some personal projects.",
+                "Reading: Personal development books, Biographies.",
+                "Sport : Walking, Fitness, Cycling",
+                "Travelling, Gaming",
               ]}
             />
           </Col>
@@ -116,10 +130,6 @@ function Resume() {
         <Row style={{ justifyContent: "center", position: "relative" }}>
           <Button variant="primary" href={pdf} target="_blank">
             <i className="fas fa-download">&nbsp;</i>Download Resume
-          </Button>
-          &nbsp; &nbsp;
-          <Button variant="primary" href={pdf_fr} target="_blank">
-            <i className="fas fa-download">&nbsp;</i>Télécharger CV
           </Button>
         </Row>
       </Container>
