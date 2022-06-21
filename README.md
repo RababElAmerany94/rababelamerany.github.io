@@ -1,7 +1,7 @@
 # Personal Portfolio with ReactJS | Project On Hold
 
 
-### Live [Demo on Github Pages](https://github.com/rabelamerany/rababelamerany)
+### Live [Demo on Github Pages](https://rabelamerany.github.io)
 
 ## Features
 
